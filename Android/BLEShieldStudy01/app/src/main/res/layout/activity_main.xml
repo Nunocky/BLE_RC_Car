@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="ui"
+            type="org.nunocky.bleshieldstudy01.MainActivity" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="org.nunocky.bleshieldstudy01.MainActivity">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button_scan"
+
+            android:background="?android:attr/colorActivatedHighlight" />
+
+        <TextView
+            android:id="@+id/textView_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_scan"
+            android:layout_alignBottom="@+id/button_scan"
+            android:layout_toEndOf="@+id/button_scan"
+            android:text="@{ui.mStatusStr}" />
+
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="@{ui.onScanButtonClicked}"
+            android:text="@string/scan" />
+
+    </RelativeLayout>
+
+</layout>
+

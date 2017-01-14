@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BLEShieldStudy01</string>
+    <string name="ble_not_supported">BLE not Supported on this device.</string>
+    <string name="scan">SCAN</string>
+    <string name="send">SEND</string>
+    <string name="title_activity_communication">CommunicationActivity</string>
+    <string name="left">←</string>
+    <string name="forward">↑</string>
+    <string name="right">→</string>
+</resources>
